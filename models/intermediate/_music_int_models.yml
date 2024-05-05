@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: int_customers_joined_to_employees
+    description: This model joins customer table with employee table and gets all the information
+      about the representative employee for each customer.
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+
+  - name: int_invoice_lines_joined_to_invoices
+    description: This model joins invoice_lines table with invoice table and gets the information
+      about all the items in the invoice along with customer billing details.
+    columns:
+      - name: invoice_lineid
+        tests:
+          - unique
+          - not_null
+
+  - name: int_tracks_joined_to_albums_artist_genre_mediatype
+    description: This model joins tracks table with albums, artist, genre and mediatype tables and
+      gets the information about all the tracks including their album_name, artist_name, genre_name, etc.
+    columns:
+      - name: track_id
+        tests:
+          - unique
+          - not_null

@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: fct_music_sales
+    description: This is a denormalized table that contain all the dimensions about the music_sales.
+    columns:
+      - name: invoice_lineid
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_music_tracks
+    description: This model captures all the attributes related to any track, their price, creator etc.
+    columns:
+      - name: track_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_music_playlists
+    description: This model captures all the attributes related to playlists.
+    columns:
+      - name: track_id || '-' || playlist_id
+        tests:
+          - unique
+          - not_null
