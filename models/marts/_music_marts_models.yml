@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: fct_music_sales
+    description: >
+
+  - name: dim_music_tracks
+    description: >
+
+  - name: dim_music_playlists
+    description: >

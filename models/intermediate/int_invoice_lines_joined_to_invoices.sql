@@ -12,5 +12,5 @@ select
     invoice_lines.quantity_purchased,
     invoice_lines.invoice_lineitem_revenue_usd
 from {{ ref('stg_music__invoice_lines') }} as invoice_lines
-left join {{ ref('stg_music__invoices') }} as invoices
+inner join {{ ref('stg_music__invoices') }} as invoices
     on invoice_lines.invoice_id = invoices.invoice_id

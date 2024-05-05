@@ -27,5 +27,5 @@ select
     employees.employee_email_address,
     employees.supervisor_employee_id
 from {{ ref('stg_music__customers') }} as customers
-left join {{ ref('stg_music__employees') }} as employees 
+inner join {{ ref('stg_music__employees') }} as employees 
     on customers.representative_employee_id = employees.employee_id
