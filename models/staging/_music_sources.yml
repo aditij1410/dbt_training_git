@@ -84,7 +84,7 @@ sources:
       - name: playlisttrack
         description: This contains data about the tracks in each playlist.
         columns:
-          - name: playlistid || - || trackid
+          - name: playlistid || '-' || trackid
             tests:
               - unique
               - not_null
