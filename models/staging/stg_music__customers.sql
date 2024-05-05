@@ -4,7 +4,7 @@ select
     lastname as customer_last_name,
     company as customer_work_company,
     address as customer_mailing_address,
-    city as cuatomer_mailing_city,
+    city as customer_mailing_city,
     state as customer_mailing_state,
     country as customer_mailing_country,
     postalcode as customer_mailing_zipcode,
