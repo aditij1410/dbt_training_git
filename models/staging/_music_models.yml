@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: stg_music__albums
+    description: >
+
+  - name: stg_music__artists
+    description: >
+
+  - name: stg_music__customers
+    description: >
+
+  - name: stg_music__employees
+    description: >
+
+  - name: stg_music__genres
+    description: >
+
+  - name: stg_music__invoice_lines
+    description: >
+
+  - name: stg_music__invoices
+    description: >
+
+  - name: stg_music__media_types
+    description: >
+
+  - name: stg_music__playlist_tracks
+    description: >
+
+  - name: stg_music__playlists
+    description: >
+
+  - name: stg_music__tracks
+    description: >
