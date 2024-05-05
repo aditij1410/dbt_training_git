@@ -2,10 +2,10 @@ version: 2
 
 models:
   - name: fct_music_sales
-    description: >
+    description: This is a denormalized table that contain all the dimensions about the music_sales.
 
   - name: dim_music_tracks
-    description: >
+    description: This model captures all the attributes related to any track, their price, creator etc.
 
   - name: dim_music_playlists
-    description: >
+    description: This model captures all the attributes related to playlists.

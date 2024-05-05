@@ -1,3 +1,6 @@
+-- This model joins customer table with employee table and gets all the information
+-- about the representative employee for each customer.
+
 select
     customers.customer_id,
     customers.customer_first_name,

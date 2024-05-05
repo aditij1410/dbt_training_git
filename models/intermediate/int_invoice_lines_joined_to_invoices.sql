@@ -1,3 +1,6 @@
+-- This model joins invoice_lines table with invoice table and gets the information
+-- about all the items in the invoice along with customer billing details.
+
 select
     invoice_lines.invoice_lineid,
     invoice_lines.invoice_id,

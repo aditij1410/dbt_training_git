@@ -8,34 +8,92 @@ sources:
 
     tables:
       - name: album
-        description: >
+        description: This table contains data about albums, their titles and artist IDs.
+        columns:
+          - name: albumid
+            tests:
+              - unique
+              - not_null
 
       - name: artist
-        description: >
+        description: This has data about artist name for each artist id.
+        columns:
+          - name: artistid
+            tests:
+              - unique
+              - not_null
 
       - name: customer
-        description: >
+        description: This contains data about customers (including their work company,
+          address, phone number and email address).
+        columns:
+          - name: customerid
+            tests:
+              - unique
+              - not_null
 
       - name: employee
-        description: >
+        description: This contains data about the employees at the music company.
+        columns:
+          - name: employeeid
+            tests:
+              - unique
+              - not_null
 
       - name: genre
-        description: >
+        description: This has data about the different genres corresponding to the genre id.
+        columns:
+          - name: genreid
+            tests:
+              - unique
+              - not_null
 
       - name: invoice
-        description: >
+        description: This has information about the different invoices like customer_id, billing
+          details (billing address, city, etc.), invoice_date and total_amount.
+        columns:
+          - name: invoiceid
+            tests:
+              - unique
+              - not_null
 
       - name: invoiceline
-        description: >
+        description: This contains information about the items in the invoice.
+        columns:
+          - name: invoicelineid
+            tests:
+              - unique
+              - not_null
 
       - name: mediatype
-        description: >
+        description: This table matches different media_types with their mediatype_id.
+        columns:
+          - name: mediatypeid
+            tests:
+              - unique
+              - not_null
 
       - name: playlist
-        description: >
+        description: This contains information about playlist_id and playlist_name.
+        columns:
+          - name: playlistid
+            tests:
+              - unique
+              - not_null
 
       - name: playlisttrack
-        description: >
+        description: This contains data about the tracks in each playlist.
+        columns:
+          - name: playlistid || - || trackid
+            tests:
+              - unique
+              - not_null
 
       - name: track
-        description: >
+        description: This has information about all the tracks, including their composer,
+          duration of the track, etc.
+        columns:
+          - name: trackid
+            tests:
+              - unique
+              - not_null

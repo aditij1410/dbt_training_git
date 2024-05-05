@@ -1,3 +1,6 @@
+-- This model joins tracks table with albums, artist, genre and mediatype tables and
+-- gets the information about all the tracks including their album_name, artist_name, genre_name, etc.
+
 select
     tracks.track_id,
     tracks.album_id,

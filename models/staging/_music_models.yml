@@ -2,34 +2,37 @@ version: 2
 
 models:
   - name: stg_music__albums
-    description: >
+    description: This model contains data about albums, their titles and artist IDs.
 
   - name: stg_music__artists
-    description: >
+    description: This has data about artist name for each artist id.
 
   - name: stg_music__customers
-    description: >
+    description: This contains data about customers (including their work company,
+      address, phone number and email address).
 
   - name: stg_music__employees
-    description: >
+    description: This contains data about the employees at the music company.
 
   - name: stg_music__genres
-    description: >
+    description: This has data about the different genres corresponding to the genre id.
 
   - name: stg_music__invoice_lines
-    description: >
+    description: This contains information about the items in the invoice.
 
   - name: stg_music__invoices
-    description: >
+    description: This has information about the different invoices like customer_id, billing
+      details (billing address, city, etc.), invoice_date and total_amount.
 
   - name: stg_music__media_types
-    description: >
+    description: This model matches different media_types with their mediatype_id.
 
   - name: stg_music__playlist_tracks
-    description: >
+    description: This contains data about the tracks in each playlist.
 
   - name: stg_music__playlists
-    description: >
+    description: This contains information about playlist_id and playlist_name.
 
   - name: stg_music__tracks
-    description: >
+    description: This has information about all the tracks, including their composer,
+      duration of the track, etc.

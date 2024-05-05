@@ -1,3 +1,5 @@
+-- This model captures all the attributes related to any track, their price, creator etc.
+
 {{
     config(
         materialized='table'

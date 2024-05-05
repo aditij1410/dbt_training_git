@@ -1,3 +1,5 @@
+-- This is a denormalized table that contain all the dimensions about the music_sales.
+
 {{
     config(
         materialized='table'

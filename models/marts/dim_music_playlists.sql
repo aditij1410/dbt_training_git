@@ -1,3 +1,5 @@
+-- This model captures all the attributes related to playlists.
+
 {{
     config(
         materialized='table'
